@@ -52,7 +52,7 @@ class FondFragment : Fragment() {
                         icon(MaterialDesignIcon.FLASH, size = "35px", color = "#ffd600")
                     }
 
-                    jfxbutton("Delete") {
+                    jfxbutton("删除") {
                         addClass(fondDeleteButtonStyle)
                         action {
                             val select = it
@@ -121,7 +121,7 @@ class FondFragment : Fragment() {
 
                                 vbox {
                                     addClass(fondBookSummaryVBoxStyle)
-                                    label("Summary") {
+                                    label("简介") {
                                         addClass(fondBookSummaryIconLabelStyle)
                                         icon(MaterialDesignIcon.GOOGLE_CIRCLES, size = "16px", color = "#4527a0")
                                     }
