@@ -37,11 +37,11 @@ class AboutFragment : Fragment() {
                     isPreserveRatio = true
                 }
 
-                label("BookManager") {
+                label("书籍管理") {
                     addClass(mainLabelStyle)
                 }
 
-                label("Find the books you like and manage them") {
+                label("找到你喜欢的书并加入喜欢列表吧！") {
                     addClass(secondLabelStyle)
                 }
             }
@@ -50,7 +50,7 @@ class AboutFragment : Fragment() {
         bottom {
             vbox {
                 addClass(bottomVBoxStyle)
-                label("Developers") {
+                label("开发成员") {
                     addClass(developLabelStyle)
                     icon(MaterialDesignIcon.DIAMOND, size = "16px", color = "#ffab00")
                 }
@@ -95,7 +95,7 @@ class AboutFragment : Fragment() {
                     }
                 }
 
-                label("Build version V1.0 release") {
+                label("版本 1.0贝塔") {
                     addClass(versionLabelStyle)
                 }
             }

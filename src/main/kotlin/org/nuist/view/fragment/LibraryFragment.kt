@@ -118,7 +118,7 @@ class LibraryFragment : Fragment() {
 
                             vbox {
                                 addClass(bookSummaryVBoxStyle)
-                                label("Summary") {
+                                label("简介") {
                                     addClass(bookSummaryIconLabelStyle)
                                     icon(MaterialDesignIcon.GOOGLE_CIRCLES, size = "16px", color = "#4527a0")
                                 }

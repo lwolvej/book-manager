@@ -17,7 +17,7 @@ import org.nuist.view.styles.RegisterFragmentStyle.Companion.small
 import org.nuist.viewmodel.UserViewModel
 import tornadofx.*
 
-class RegisterFragment : Fragment("Register") {
+class RegisterFragment : Fragment("注册") {
 
     private val userApi: UserApi by inject()
 
@@ -33,7 +33,7 @@ class RegisterFragment : Fragment("Register") {
 
         form {
             fieldset {
-                field("account") {
+                field("账户") {
                     icon(MaterialDesignIcon.ACCOUNT_PLUS)
                     jfxtextfield(userViewModel.account) {
                         onMouseClickedProperty().value = EventHandler {
@@ -44,7 +44,7 @@ class RegisterFragment : Fragment("Register") {
                         }
                     }
                 }
-                field("password") {
+                field("密码") {
                     icon(MaterialDesignIcon.SECURITY)
                     jfxpasswordfield(userViewModel.password) {
                         onMouseClickedProperty().value = EventHandler {
@@ -55,7 +55,7 @@ class RegisterFragment : Fragment("Register") {
                         }
                     }
                 }
-                field("real name") {
+                field("真实姓名") {
                     icon(MaterialDesignIcon.RENAME_BOX)
                     jfxtextfield(userViewModel.realName) {
                         onMouseClickedProperty().value = EventHandler {
@@ -66,7 +66,7 @@ class RegisterFragment : Fragment("Register") {
                         }
                     }
                 }
-                field("birthday") {
+                field("生日") {
                     icon(MaterialDesignIcon.CAKE_VARIANT)
                     jfxdatepicker(userViewModel.birthday) {
                         addClass(jfxDatePicker)
@@ -80,7 +80,7 @@ class RegisterFragment : Fragment("Register") {
                 }
             }
             buttonbar {
-                jfxbutton("Register") {
+                jfxbutton("注册") {
                     addClass(registerButtonStyle)
                     icon(MaterialDesignIcon.FLASH, "14px")
                     action {
@@ -94,7 +94,7 @@ class RegisterFragment : Fragment("Register") {
     private fun Button.register() {
         fun signalSigningIn() {
             properties["originalText"] = text
-            text = "loading..."
+            text = "加载中..."
             opacity = 0.5
         }
 
@@ -124,7 +124,7 @@ class RegisterFragment : Fragment("Register") {
         root.select<StackPane>(messageWrapper).replaceChildren {
             hbox {
                 addClass(errorMessage)
-                label("Register fail! Check your information!")
+                label("注册失败，检查你填写的信息！")
                 spacer()
                 button {
                     addClass(crossIcon, RegisterFragmentStyle.icon, small)

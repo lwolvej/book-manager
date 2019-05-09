@@ -20,7 +20,7 @@ class Application : App(
     private val rest: Rest by inject()
 
     init {
-        rest.baseURI = "http://192.168.43.15:10086"
+        rest.baseURI = "http://119.29.13.45:10086"
 
     }
 }

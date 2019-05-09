@@ -48,7 +48,7 @@ class DashboardView : View("dashboard") {
                                 fitHeight = 40.0
                                 isPreserveRatio = true
                             }
-                            label("BookManager") {
+                            label("书籍管理") {
                                 addClass(firstLabelStyle)
                                 GlowText(this, Color.valueOf("#18ffff"), Color.valueOf("#00b8d4"))
                                     .apply {
@@ -67,25 +67,25 @@ class DashboardView : View("dashboard") {
                     effect = DropShadow(BlurType.GAUSSIAN, Color.valueOf("#424242"), 10.0, 0.0, 0.0, 10.0)
                     vbox {
                         addClass(secondVBoxStyle)
-                        label("Home") {
+                        label("主页") {
                             icon(MaterialDesignIcon.HOME, "30px", "#2196f3")
                             onMouseClicked = EventHandler {
                                 changeCenterPane(1)
                             }
                         }
-                        label("Library") {
+                        label("书店") {
                             icon(MaterialDesignIcon.BOOK, "30px", "#3f51b5")
                             onMouseClicked = EventHandler {
                                 changeCenterPane(2)
                             }
                         }
-                        label("Fond") {
+                        label("喜欢") {
                             icon(MaterialDesignIcon.HEART, "30px", "#673ab7")
                             onMouseClicked = EventHandler {
                                 changeCenterPane(3)
                             }
                         }
-                        label("About") {
+                        label("关于") {
                             icon(MaterialDesignIcon.SETTINGS, "30px", "#03a9f4")
                             onMouseClicked = EventHandler {
                                 changeCenterPane(4)

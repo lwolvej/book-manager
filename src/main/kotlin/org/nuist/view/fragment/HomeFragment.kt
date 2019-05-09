@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
 
             vbox {
                 addClass(secondHomeVBoxStyle)
-                label("Age") {
+                label("年龄") {
                     addClass(secondHomeIncLabelStyle)
                     icon(MaterialDesignIcon.FISH, size = "20px", color = "#ff5252")
                 }
@@ -76,7 +76,7 @@ class HomeFragment : Fragment() {
             vbox {
                 addClass(secondHomeVBoxStyle)
 
-                label("Birthday") {
+                label("生日") {
                     addClass(secondHomeIncLabelStyle)
                     icon(MaterialDesignIcon.GOOGLE_CONTROLLER, size = "20px", color = "#e040fb")
                 }
@@ -91,7 +91,7 @@ class HomeFragment : Fragment() {
         vbox {
             addClass(thirdHomeVBoxStyle)
 
-            label("Change Your Password!") {
+            label("修改密码") {
                 addClass(changePasswordLabelStyle)
                 icon(MaterialDesignIcon.INFORMATION, size = "24px", color = "#ff6e40")
             }
@@ -100,7 +100,7 @@ class HomeFragment : Fragment() {
                 addClass(passwordHomeHBoxStyle)
                 vbox {
                     addClass(passwordHomeVBoxStyle)
-                    label("Old Password") {
+                    label("输入旧密码") {
                         addClass(passwordHomeLabelStyle)
                         icon(MaterialDesignIcon.GOOGLE_CHROME, size = "20px", color = "#536dfe")
                     }
@@ -111,7 +111,7 @@ class HomeFragment : Fragment() {
                 }
                 vbox {
                     addClass(passwordHomeVBoxStyle)
-                    label("New Password") {
+                    label("输入新密码") {
                         addClass(passwordHomeLabelStyle)
                         icon(MaterialDesignIcon.COMPASS, size = "20px", color = "#40c4ff")
                     }
@@ -121,7 +121,7 @@ class HomeFragment : Fragment() {
                 }
             }
 
-            jfxbutton("Update") {
+            jfxbutton("更新密码") {
                 addClass(updateButtonHomeStyle)
                 action {
                     update()

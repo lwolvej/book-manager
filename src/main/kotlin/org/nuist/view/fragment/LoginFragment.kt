@@ -17,7 +17,7 @@ import org.nuist.view.styles.LoginFragmentStyle.Companion.small
 import org.nuist.viewmodel.UserViewModel
 import tornadofx.*
 
-class LoginFragment : Fragment("Login") {
+class LoginFragment : Fragment("登陆") {
 
     private val userApi: UserApi by inject()
 
@@ -34,7 +34,7 @@ class LoginFragment : Fragment("Login") {
 
         form {
             fieldset {
-                field("account") {
+                field("账户") {
                     icon(MaterialDesignIcon.ACCOUNT)
                     jfxtextfield(userViewModel.account) {
                         isFocused
@@ -46,7 +46,7 @@ class LoginFragment : Fragment("Login") {
                         }
                     }
                 }
-                field("password") {
+                field("密码") {
                     icon(MaterialDesignIcon.KEY)
                     jfxpasswordfield(userViewModel.password) {
                         setId(passwordField)
@@ -60,7 +60,7 @@ class LoginFragment : Fragment("Login") {
                 }
             }
             buttonbar {
-                jfxbutton("Login now!") {
+                jfxbutton("登陆") {
                     icon(MaterialDesignIcon.LOGIN)
                     action {
                         login()
@@ -74,7 +74,7 @@ class LoginFragment : Fragment("Login") {
 
         fun signalSigningIn() {
             properties["originalText"] = text
-            text = "Signing..."
+            text = "登陆中..."
             opacity = 0.5
         }
 
@@ -105,7 +105,7 @@ class LoginFragment : Fragment("Login") {
         root.select<StackPane>(messageWrapper).replaceChildren {
             hbox {
                 addClass(errorMessage)
-                label("Incorrect account or password.")
+                label("账户或密码错误！")
                 spacer()
                 button {
                     addClass(crossIcon, LoginFragmentStyle.icon, small)
