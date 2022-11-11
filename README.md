@@ -1,4 +1,4 @@
-## 使用kotlin+JavaFX构建的简单的Oracle课设  
+## Use kotlin+JavaFX build a simple course work
 
-使用torandofx框架，同时做了点JFoenix的适配。  
-服务端暂时没有上传。
+
+Use torandofx framework and do a little change to make JFoenix to fit kotlin.
